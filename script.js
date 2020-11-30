@@ -4,6 +4,7 @@ const btn = document.getElementById('clear-board');
 const pixelBoard = document.getElementById('pixel-board');
 const btnGenerate = document.getElementById('generate-board');
 const cores = ['#000000'];
+const btnNewColors = document.getElementById('new-colors');
 
 function clearBoard() {
   const pixel = document.querySelectorAll('.pixel');
@@ -113,5 +114,9 @@ function evitaCorRepetida() {
 evitaCorRepetida();
 geraCores();
 
+btnNewColors.addEventListener('click', () => {
+  evitaCorRepetida();
+  geraCores();
+});
 btn.addEventListener('click', clearBoard);
 btnGenerate.addEventListener('click', generateBoard);

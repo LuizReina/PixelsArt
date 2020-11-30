@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paleta de Cores</title>
     <link rel="stylesheet" href="style.css">
-</head>
+</hea>
 <body>
-    <header>
-        <h1 id='title'>Paleta de Cores</h1>
-    </header>
+        <header>
+            <h1 id='title'>Paleta de Cores</h1>
+        </header>
 
-    <section>
-        <div class='palette' id='color-palette'></div>
-    </section>
+        <section>
+            <div class='palette' id='color-palette'></div>
+        </section>
 
-    <section>
-        <input type='number' min='1' id='board-size'></div>
-        <button id='generate-board'>VQV</button>
-    </section>
+        <button id="new-colors">Novas cores</button>
 
-    <section>
-        <button id='clear-board'>Limpar</button>
-    </section>
+        <section>
+            <label for="board-size">Tamanho do quadro: </label>
+            <input type='number' min='1' id='board-size'></div>
+            <button id='generate-board'>VQV</button>
+        </section>
 
-    <div id='pixel-board'></div>
+        <section>
+            <button id='clear-board'>Limpar</button>
+        </section>
 
-    <script src="script.js"></script>
+        <div id='pixel-board'></div>
+    
+        <script src="script.js"></script>
 </body>
 </html>
